@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bin2Text - Decodificador Binário</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header class="animated-header">
+        <div class="container">
+            <h1><i class="fas fa-code"></i> Bin2Text</h1>
+            <p>Converta binário para texto em tempo real</p>
+        </div>
+    </header>
+
+    <main>
+        <section class="converter-section">
+            <div class="container">
+                <div class="converter-box animated-card">
+                    <div class="conversion-type">
+                        <button id="to-text-btn" class="btn btn-primary active">
+                            <i class="fas fa-exchange-alt"></i> Binário → Texto
+                        </button>
+                        <button id="to-binary-btn" class="btn btn-outline">
+                            <i class="fas fa-exchange-alt"></i> Texto → Binário
+                        </button>
+                    </div>
+                    
+                    <div class="input-group">
+                        <label for="input-data"><i class="fas fa-keyboard"></i> Entrada:</label>
+                        <textarea id="input-data" placeholder="Digite o conteúdo a ser convertido"></textarea>
+                    </div>
+                    
+                    <div class="controls">
+                        <button id="convert-btn" class="btn pulse-animation">
+                            <i class="fas fa-cogs"></i> Converter
+                        </button>
+                        <button id="clear-btn" class="btn btn-outline">
+                            <i class="fas fa-broom"></i> Limpar
+                        </button>
+                    </div>
+                    
+                    <div class="input-group">
+                        <label for="output-data"><i class="fas fa-font"></i> Resultado:</label>
+                        <textarea id="output-data" readonly></textarea>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="info-section">
+            <div class="container">
+                <h2><i class="fas fa-info-circle"></i> Como usar</h2>
+                <div class="info-grid">
+                    <div class="info-card animated-card">
+                        <i class="fas fa-keyboard"></i>
+                        <h3>Digite o binário</h3>
+                        <p>Insira os bytes binários separados por espaços (8 dígitos cada)</p>
+                    </div>
+                    <div class="info-card animated-card">
+                        <i class="fas fa-magic"></i>
+                        <h3>Clique em converter</h3>
+                        <p>Nosso algoritmo decodificará automaticamente</p>
+                    </div>
+                    <div class="info-card animated-card">
+                        <i class="fas fa-copy"></i>
+                        <h3>Copie o resultado</h3>
+                        <p>Use o texto decodificado como necessário</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>© 2023 Bin2Text - Todos os direitos reservados</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
