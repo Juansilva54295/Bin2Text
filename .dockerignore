@@ -1,0 +1,5 @@
+# Evita copiar desnecessários
+.git
+.gitignore
+netlify.toml
+frontend/

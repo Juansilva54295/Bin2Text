@@ -1,13 +1,12 @@
-FROM openjdk:17
+FROM openjdk:17-slim
 
-# Cria diretório de trabalho no container
 WORKDIR /app
 
-# Copia todos os arquivos do projeto para o container
-COPY . .
+# Copia o conteúdo da pasta Backend mantendo a estrutura
+COPY Backend/ ./Backend/
 
-# Compila todos os arquivos Java do backend
+# Compila a classe principal
 RUN javac Backend/BinaryDecoderServer.java
 
-# Comando para iniciar o servidor
+# Executa a classe com o package correto
 CMD ["java", "Backend.BinaryDecoderServer"]

@@ -1,5 +1,5 @@
 services:
   - type: web
-    name: bin2text-backend
+    name: bin2text
     env: docker
     plan: free
