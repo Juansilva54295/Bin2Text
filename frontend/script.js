@@ -87,7 +87,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Funções de conversão
     async function binaryToText(binary) {
-        const response = await fetch('http://localhost:8080/api/decode', {
+        const response = await fetch('https://bin2text-elj0.onrender.com/api/decode', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({ binary })
@@ -99,7 +99,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     async function textToBinary(text) {
-        const response = await fetch('http://localhost:8080/api/encode', {
+        const response = await fetch('https://bin2text-elj0.onrender.com/api/encode', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({ text })
